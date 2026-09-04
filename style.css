@@ -5,9 +5,20 @@
 }
 
 body {
+    
     font-family: Arial, sans-serif;
-    background: #fff8ed;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("india-culture-map.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: #2b1b0e;
+
 }
 
 header {
