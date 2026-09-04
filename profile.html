@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Indian Culture Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>🇮🇳 Indian Culture Quest</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="states.html">States</a>
+        </nav>
+
+    </header>
+
+
+    <main class="profile-container">
+
+        <div class="profile-card">
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+            <h1>My Culture Profile</h1>
+
+            <h2 id="playerName">Culture Explorer</h2>
+
+            <div class="profile-stats">
+
+                <div class="stat">
+                    <h3 id="totalPoints">0</h3>
+                    <p>🏆 Total Points</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="quizCompleted">0</h3>
+                    <p>🎯 Quizzes Completed</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="statesExplored">0</h3>
+                    <p>🇮🇳 States Explored</p>
+                </div>
+
+            </div>
+
+
+            <h2>🏅 My Badges</h2>
+
+            <div class="badges">
+
+                <div class="badge">
+                    🌸
+                    <p>Culture Explorer</p>
+                </div>
+
+                <div class="badge">
+                    🧵
+                    <p>Heritage Learner</p>
+                </div>
+
+            </div>
+
+
+            <a href="states.html" class="start-button">
+                EXPLORE MORE
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const savedScore = localStorage.getItem("cultureScore");
+
+        const savedQuizCount = localStorage.getItem("quizCompleted");
+
+        if (savedScore) {
+            document.getElementById("totalPoints").textContent = savedScore;
+        }
+
+        if (savedQuizCount) {
+            document.getElementById("quizCompleted").textContent = savedQuizCount;
+        }
+
+    </script>
+
+</body>
+
+</html>
