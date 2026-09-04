@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana Culture | Indian Culture Quest</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #fffaf3;
+        color: #333;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #8e2de2, #ff512f);
+        color: white;
+        padding: 18px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 22px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    /* Intro */
+    .intro {
+        text-align: center;
+        padding: 45px 10%;
+    }
+
+    .intro h2 {
+        color: #8e2de2;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .intro p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    /* Culture Cards */
+    .culture-grid {
+        width: 86%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+
+    .card h3 {
+        color: #ff512f;
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .card p {
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Quiz Section */
+    .quiz-section {
+        text-align: center;
+        padding: 55px 20px;
+        background: linear-gradient(135deg, #ff512f, #8e2de2);
+        color: white;
+    }
+
+    .quiz-section h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .quiz-section p {
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    .quiz-button {
+        display: inline-block;
+        background: white;
+        color: #8e2de2;
+        padding: 14px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .quiz-button:hover {
+        background: #ffe9dc;
+        transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        nav a {
+            margin: 0 7px;
+            font-size: 14px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Header -->
+<header>
+    <h1>Indian Culture Quest</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="culture.html">Culture</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Telangana</h2>
+        <p>
+            Discover the vibrant traditions, colorful festivals,
+            artistic heritage, dance, food and folk music of Telangana.
+        </p>
+    </div>
+</section>
+
+
+<!-- Introduction -->
+<section class="intro">
+    <h2>The Spirit of Telangana</h2>
+
+    <p>
+        Telangana is a land of rich traditions and vibrant cultural
+        expressions. From the colorful celebration of Bathukamma to
+        the elegant Pochampally Ikat, the state preserves a unique
+        heritage passed down through generations.
+    </p>
+</section>
+
+
+<!-- Culture Cards -->
+<section class="culture-grid">
+
+    <!-- Bathukamma -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"
+             alt="Flowers representing Bathukamma">
+
+        <div class="card-content">
+            <h3>🌸 Bathukamma</h3>
+
+            <p>
+                Bathukamma is a colorful floral festival celebrated
+                by women across Telangana. Flowers are arranged in
+                beautiful layers to create a distinctive flower
+                stack, around which women sing and dance traditional
+                songs.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Pochampally Ikat -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80"
+             alt="Traditional handloom textile">
+
+        <div class="card-content">
+            <h3>🧵 Pochampally Ikat</h3>
+
+            <p>
+                Pochampally Ikat is a famous Telangana handloom
+                tradition known for its geometric patterns and
+                distinctive tie-and-dye weaving technique. It is
+                closely associated with the town of Bhoodan
+                Pochampally.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Perini Dance -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=900&q=80"
+             alt="Traditional Indian dance">
+
+        <div class="card-content">
+            <h3>💃 Perini Dance</h3>
+
+            <p>
+                Perini Shivathandavam is a traditional dance form
+                associated with Telangana. Historically performed
+                by warriors, it is known for its energetic movements,
+                powerful rhythm and connection with Lord Shiva.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Food -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
+             alt="Traditional Indian food">
+
+        <div class="card-content">
+            <h3>🍛 Traditional Food</h3>
+
+            <p>
+                Telangana cuisine is known for bold flavors and
+                spicy dishes. Popular foods include Sarva Pindi,
+                Sakinalu, Jonna Rotte, Pachi Pulusu, Hyderabadi
+                Biryani and various traditional pickles and chutneys.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Folk Music -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+             alt="Traditional folk music performance">
+
+        <div class="card-content">
+            <h3>🎶 Folk Music</h3>
+
+            <p>
+                Telangana has a rich folk music tradition featuring
+                lively songs, rhythmic performances and instruments.
+                Oggu Katha is one of the well-known storytelling
+                traditions combining music, narration and performance.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Quiz -->
+<section class="quiz-section">
+    <h2>How Well Do You Know Telangana?</h2>
+
+    <p>
+        Test your knowledge of Telangana's culture and heritage!
+    </p>
+
+    <a href="quiz.html" class="quiz-button">
+        Take the Quiz →
+    </a>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Indian Culture Quest | Celebrating India's Heritage</p>
+</footer>
+```
+
+</body>
+</html>
