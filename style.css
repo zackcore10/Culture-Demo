@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* ===== BODY ===== */
 
 body {
@@ -78,7 +79,7 @@ nav a:hover {
 }
 
 
-/* MAIN HEADING */
+/* ===== MAIN HEADING ===== */
 
 .hero h1 {
     font-size: 60px;
@@ -86,16 +87,14 @@ nav a:hover {
 
     margin-bottom: 25px;
 
-    /* WARM IVORY TEXT */
     color: #FFF7E6;
 
-    /* Makes text visible on background */
     text-shadow:
         2px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 
-/* DESCRIPTION */
+/* ===== DESCRIPTION ===== */
 
 .hero p {
     max-width: 650px;
@@ -105,10 +104,8 @@ nav a:hover {
 
     margin-bottom: 35px;
 
-    /* WARM IVORY TEXT */
     color: #FFF7E6;
 
-    /* Makes paragraph readable */
     text-shadow:
         1px 2px 6px rgba(0, 0, 0, 0.8);
 }
@@ -256,7 +253,7 @@ nav a:hover {
 }
 
 
-/* QUESTION */
+/* ===== QUESTION ===== */
 
 #question {
     font-size: 24px;
@@ -267,7 +264,7 @@ nav a:hover {
 }
 
 
-/* OPTIONS */
+/* ===== OPTIONS ===== */
 
 #options {
     display: flex;
@@ -278,7 +275,7 @@ nav a:hover {
 }
 
 
-/* OPTION BUTTON */
+/* ===== OPTION BUTTON ===== */
 
 .option-btn {
     padding: 14px 20px;
@@ -311,7 +308,7 @@ nav a:hover {
 }
 
 
-/* NEXT BUTTON */
+/* ===== NEXT BUTTON ===== */
 
 #nextBtn {
     margin-top: 25px;
@@ -340,7 +337,7 @@ nav a:hover {
 }
 
 
-/* SCORE */
+/* ===== SCORE ===== */
 
 #score {
     font-size: 22px;
@@ -353,7 +350,187 @@ nav a:hover {
 }
 
 
-/* ===== MOBILE RESPONSIVE ===== */
+/* ================================================= */
+/* ===== STATES PAGE =============================== */
+/* ================================================= */
+
+.states-container {
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* ===== STATES HEADING ===== */
+
+.states-container h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    color: #FFF7E6;
+
+    text-shadow:
+        2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ===== STATES SUBTITLE ===== */
+
+.states-subtitle {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+    color: #FFF7E6;
+
+    text-shadow:
+        1px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ===== STATES GRID ===== */
+
+.states-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ===== STATE CARD ===== */
+
+.state-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+
+/* ===== STATE CARD HOVER ===== */
+
+.state-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===== STATE ICON ===== */
+
+.state-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===== STATE NAME ===== */
+
+.state-card h2 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+    color: #FFF7E6;
+
+    text-shadow:
+        2px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ===== STATE DESCRIPTION ===== */
+
+.state-card p {
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    color: #FFF7E6;
+
+    text-shadow:
+        1px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ===== EXPLORE BUTTON ===== */
+
+.explore-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #d97706;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button:hover {
+    background: #b45309;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    background: white;
+
+    font-weight: bold;
+}
+
+footer p {
+    color: #2b1b0e;
+}
+
+
+/* ================================================= */
+/* ===== MOBILE RESPONSIVE ========================= */
+/* ================================================= */
+
+@media (max-width: 800px) {
+
+    .states-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -409,100 +586,17 @@ nav a:hover {
 }
 
 
-/* ===== States Page ===== */
-
-.states-container {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.states-container h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.states-subtitle {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.states-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.state-card {
-    background: white;
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.state-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
-}
-
-.state-icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.state-card h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.state-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.explore-button {
-    display: inline-block;
-    text-decoration: none;
-    background: #d97706;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.explore-button:hover {
-    background: #b45309;
-}
-
-/* ===== Footer ===== */
-
-footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    background: white;
-    font-weight: bold;
-}
-
-/* ===== Mobile ===== */
-
-@media (max-width: 800px) {
-    .states-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 550px) {
+
     .states-grid {
         grid-template-columns: 1fr;
     }
 
     .states-container h1 {
         font-size: 32px;
+    }
+
+    .states-subtitle {
+        font-size: 16px;
     }
 }
